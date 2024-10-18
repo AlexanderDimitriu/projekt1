@@ -104,7 +104,7 @@
         }
 
         #showcase {
-            background: #333 url(../webovky_new/img/jablickov2.jpg) no-repeat center center/cover;
+            background: #333 url("./img/jablickov2.jpg") no-repeat center center/cover;
             height: 100vh;
             color: #fff;
 
