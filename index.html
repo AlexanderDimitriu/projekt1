@@ -73,6 +73,38 @@
 
     <div class="hr"></div>
 
+  
+
+    <section id="about-us" class="bg-light py-1">
+        <div class="container">
+            <h2 class="m-heading text-center">
+                <span class="text-primary">O naší</span>
+                firmě
+            </h2>
+            <p>
+                Naše společnost Jablko se zabývá pěstováním a distribucí těch nejkvalitnějších jablek z moravských sadů. 
+                Dbáme na ekologické postupy a na zajištění čerstvosti každého plodu, který k vám doručíme.
+                Naše jablka jsou sklízená s láskou a péčí, abyste si mohli vychutnat skutečně to nejlepší, co příroda nabízí.
+            </p>
+            <br>
+            <div class="img-container">
+                <img src="img/farmar-s-jablkem.webp" alt="Farmář sklízí jablko ze stromu" width="600">
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo by <a href="https://www.shutterstock.com/image-photo/farmer-straw-hat-holding-crate-600nw-1816885799.jpg"></a>  -->
+
+    
+
+    <script>
+        // Když klikne na "About", stránka se posune na sekci "about-us"
+        document.querySelector('a[href="#about"]').addEventListener('click', function (e) {
+            e.preventDefault();
+            document.getElementById('about-us').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+    
     <footer>
 
 
@@ -91,9 +123,6 @@
             <a href="#"><i class="fab fa-instagram"></i></a>
         </div>
     </footer>
-
-    <div class="hr"></div>
-
 </body>
 
 </html>

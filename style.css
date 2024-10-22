@@ -26,7 +26,7 @@
         .btn {
             display: inline-block;
             color: black;
-            background-color: rgb(43, 244, 227);
+            background-color: rgb(43, 244, 107);
             padding: 1rem 2rem;
             border: none;
             border-radius: 5px;
@@ -41,14 +41,17 @@
 
         .py-1 {
             padding: 1.5rem 0;
+            background-color: #ffffff;
         }
 
         .py-2 {
             padding: 2rem 0;
+           
         }
 
         .py-3 {
             padding: 3rem 0;
+            
         }
 
         .container {
@@ -100,7 +103,7 @@
         }
 
         #navbar ul li a:hover {
-            background-color: #824b00
+            background-color: #ffffff
         }
 
         #showcase {
@@ -124,6 +127,7 @@
         #what .items {
             display: flex;
             padding: 1rem;
+            
 
         }
 
@@ -132,28 +136,22 @@
             padding: 1rem;
             flex: 1;
             flex-direction: row;
+            
    
         }
 
         #what .items .item i {
-            background: rgb(43, 244, 227);
+            background: rgb(43, 244, 107);
             padding: 1rem 2rem;
             border-radius: 50%;
             margin-bottom: 1rem;
         }
 
-        .hr {
-            border-top: red 3px dashed;
-            border-bottom: blue 5px dotted;
-            padding: 1rem;
-            margin: 1rem;
-            max-width: 900px;
-            
-        }
+       
 
         /* Stylizace patičky */
         footer {
-            background-color: #ffffff;
+            background-color: #69db73;
             color: rgb(0, 0, 0);
             padding: 20px;
             margin-top: 20px;
@@ -193,4 +191,5 @@
             font-size: 1.5rem;
             color: rgb(0, 0, 0);
         }
-    
+        
+     
