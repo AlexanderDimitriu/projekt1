@@ -151,7 +151,7 @@
 
         /* Stylizace patičky */
         footer {
-            background-color: #69db73;
+            background-color: #fff;
             color: rgb(0, 0, 0);
             padding: 20px;
             margin-top: 20px;
@@ -162,6 +162,8 @@
             text-align: center;
             justify-content: center;
         }
+
+        
 
         .footer-container {
             flex: 1;
@@ -192,4 +194,135 @@
             color: rgb(0, 0, 0);
         }
         
-     
+        /* CSS pro sekci "about-us" */
+.about-box {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    padding: 2em;
+    background-color: #bbb; /* Pozadí za celým boxem */
+    border-radius: 10px;
+}
+
+.img-container img {
+    width: 100%;
+    max-width: 400px; /* Nastavení velikosti obrázku */
+    border-radius: 8px;
+}
+
+.text-box {
+    background-color: #fff; /* Bílý rámeček za textem uvnitř hlavního boxu */
+    padding: 1.5em;
+    border-radius: 5px;
+    color: #333;
+    max-width: 600px;
+    font-size: 1.1em;
+    line-height: 1.8;
+    text-align: justify; /* Zarovnání textu do bloku */
+}
+
+/* Responzivní úprava pro menší obrazovky */
+@media (max-width: 768px) {
+    .about-box {
+        flex-direction: column;
+        text-align: center;
+        padding: 2em;
+    }
+    .img-container img, .text-box {
+        max-width: 100%;
+    }
+}
+
+#order-form-section {
+    padding: 2em 1em;
+    background-color: #f9f9f9;
+}
+
+.order-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.order-form label {
+    font-weight: bold;
+}
+
+.order-form input[type="text"],
+.order-form input[type="email"],
+.order-form input[type="tel"],
+.order-form input[type="apple-variety"],
+.order-form input[type="delivery-method"],
+.order-form input[type="special-requests"],
+.order-form input[type="number"]
+{
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.order-form button {
+    padding: 0.6em;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.order-form button:hover {
+    background-color: #555;
+}
+
+#order-form {
+    background-color: #f8f9fa; /* Světle šedé pozadí pro sekci formuláře */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Stín pro hloubku */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #007bff; /* Modrý rámeček při aktivaci */
+    outline: none;
+}
+
+.btn {
+    background-color: #28a745; /* Zelená barva pro tlačítko */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s; /* Efekt při hoveru */
+}
+
+.btn:hover {
+    background-color: #218838; /* Tmavší zelená pro hover */
+}
+

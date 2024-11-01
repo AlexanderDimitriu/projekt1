@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Objednávka čerstvých jablek</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="logo">
+            <i class="fa-brands fa-apple"></i> Jablko
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="order.html">Form</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#account">Account</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+
+    <section id="order-form" class="bg-light py-1">
+        <div class="container">
+            <h2 class="m-heading text-center">
+                <span class="text-primary">Objednávka čerstvých</span> jablek
+            </h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Jméno:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Telefonní číslo:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="apple-variety">Vyberte odrůdu jablek:</label>
+                    <select id="apple-variety" name="apple-variety" required>
+                        <option value="golden-delicious">Golden Delicious</option>
+                        <option value="granny-smith">Granny Smith</option>
+                        <option value="gala">Gala</option>
+                        <option value="fuji">Fuji</option>
+                        <option value="honeycrisp">Honeycrisp</option>
+                        <option value="braeburn">Braeburn</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="quantity">Množství (kg):</label>
+                    <input type="number" id="quantity" name="quantity" min="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="delivery-method">Způsob doručení:</label>
+                    <select id="delivery-method" name="delivery-method" required>
+                        <option value="personal-pickup">Osobní odběr</option>
+                        <option value="home-delivery">Doručení domů</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="special-requests">Speciální požadavky:</label>
+                    <textarea id="special-requests" name="special-requests" placeholder="Například: Přidejte prosím další kg."></textarea>
+                </div>
+                <button type="submit" class="btn">Odeslat objednávku</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+
+
+        <!-- Kontejner 2: Kontakt -->
+        <div id="contact" class="footer-container">
+            <h3>Kontakt</h3>
+            <p>Email: <a href="mailto:info@jablko.com">info@jablko.com</a></p>
+            <p>Telefon: +420 123 456 789</p>
+        </div>
+
+        <!-- Kontejner 3: Sledujte nás -->
+        <div class="footer-container">
+            <h3>Sledujte nás</h3>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+    
+</body>
+
+</html>

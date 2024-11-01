@@ -21,7 +21,7 @@
         </div>
         <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#form">Form</a></li>
+            <li><a href="order.html">Form</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><a href="#account">Account</a></li>
             <li><a href="#about">About</a></li>
@@ -73,29 +73,32 @@
 
     <div class="hr"></div>
 
-  
+
 
     <section id="about-us" class="bg-light py-1">
-        <div class="container">
-            <h2 class="m-heading text-center">
-                <span class="text-primary">O naší</span>
-                firmě
-            </h2>
-            <p>
-                Naše společnost Jablko se zabývá pěstováním a distribucí těch nejkvalitnějších jablek z moravských sadů. 
-                Dbáme na ekologické postupy a na zajištění čerstvosti každého plodu, který k vám doručíme.
-                Naše jablka jsou sklízená s láskou a péčí, abyste si mohli vychutnat skutečně to nejlepší, co příroda nabízí.
-            </p>
-            <br>
+        <div class="container about-box">
             <div class="img-container">
-                <img src="img/farmar-s-jablkem.webp" alt="Farmář sklízí jablko ze stromu" width="600">
+                <img src="img/farmar-s-jablkem.webp" alt="Farmář sklízí jablko ze stromu" width="300">
+            </div>
+            <div class="text-box">
+                <h2 class="m-heading">
+                    <span class="text-primary">O naší</span> firmě
+                </h2>
+                <p>
+                    Naše společnost Jablko se zabývá pěstováním a distribucí těch nejkvalitnějších jablek z moravských sadů.
+                    Dbáme na ekologické postupy a na zajištění čerstvosti každého plodu, který k vám doručíme.
+                    Naše jablka jsou sklízená s láskou a péčí, abyste si mohli vychutnat skutečně to nejlepší, co příroda
+                    nabízí.
+                </p>
             </div>
         </div>
     </section>
+    
+    
 
     <!-- Photo by <a href="https://www.shutterstock.com/image-photo/farmer-straw-hat-holding-crate-600nw-1816885799.jpg"></a>  -->
 
-    
+
 
     <script>
         // Když klikne na "About", stránka se posune na sekci "about-us"
@@ -104,25 +107,36 @@
             document.getElementById('about-us').scrollIntoView({ behavior: 'smooth' });
         });
     </script>
+    <script>// Plynulý posun na sekci "Contact"
+        document.querySelector('a[href="#contact"]').addEventListener('click', function (e) {
+            e.preventDefault();
+            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+
     
-    <footer>
 
 
-        <!-- Kontejner 2: Kontakt -->
-        <div class="footer-container">
-            <h3>Kontakt</h3>
-            <p>Email: <a href="mailto:info@jablko.com">info@jablko.com</a></p>
-            <p>Telefon: +420 123 456 789</p>
-        </div>
+      
+         <!-- Kontaktní informace a sociální sítě -->
+         <footer>
+            <div id="contact" class="footer-container">
+                <h3>Kontakt</h3>
+                <p>Email: <a href="mailto:info@jablko.com">info@jablko.com</a></p>
+                <p>Telefon: +420 123 456 789</p>
+            </div>
+            <div class="footer-container">
+                <h3>Sledujte nás</h3>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </footer>
+    </div>
 
-        <!-- Kontejner 3: Sledujte nás -->
-        <div class="footer-container">
-            <h3>Sledujte nás</h3>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-        </div>
-    </footer>
+    
+
+
 </body>
 
 </html>
